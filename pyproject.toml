@@ -1,0 +1,22 @@
+[project]
+name = "weather-data-engineering"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vasif-asadov1", email = "asadov1.vasif@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.43.118",
+    "pandas>=3.1.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+weather-data-engineering = "weather_data_engineering:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"

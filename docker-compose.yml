@@ -1,0 +1,9 @@
+services:
+  s3mock:
+    image: adobe/s3mock:latest
+    container_name: weather_s3_bronze
+    ports:
+      - "9090:9090"
+    environment:
+      - initialBuckets=weather-bronze
+    restart: unless-stopped
