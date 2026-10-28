@@ -1,0 +1,16 @@
+name: 'dbt_transformations'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_transformations'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_transformations:
+    # This ensures all our staging and mart models become physical tables in DuckDB
+    +materialized: table

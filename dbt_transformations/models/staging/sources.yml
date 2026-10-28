@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: bronze_layer
+    schema: main
+    tables:
+      - name: weather_raw
+        external: location 's3://weather-bronze/weather/*.csv'
+      - name: air_quality_raw
+        external: location 's3://weather-bronze/air_quality/*.csv'

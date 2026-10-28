@@ -1,0 +1,56 @@
+[0m23:01:04.712046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f44896e65a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4488acadb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f448b939430>]}
+
+
+============================== 23:01:04.763394 | 7e82f051-b125-47ac-a5dd-2063d6cc41e7 ==============================
+[0m23:01:04.763394 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:01:04.764092 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --profiles-dir .', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'empty': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_path': 'logs', 'fail_fast': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'debug': 'False', 'version_check': 'True', 'introspect': 'True', 'profiles_dir': '.', 'hints_enabled': 'True', 'log_format': 'default', 'warn_error': 'None'}
+[0m23:01:04.764771 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vasif/Projects/weather-data-engineering/dbt_transformations/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:01:04.765573 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.14619961, "process_in_blocks": "736", "process_kernel_time": 0.107109, "process_mem_max_rss": "136504", "process_out_blocks": "680", "process_user_time": 1.677194}
+[0m23:01:04.766108 [debug] [MainThread]: Command `dbt run` failed at 23:01:04.766003 after 0.15 seconds
+[0m23:01:04.766580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4488acadb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4489baef60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4489bad910>]}
+[0m23:01:04.767044 [debug] [MainThread]: Flushing usage events
+[0m23:01:05.776722 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:03:18.685400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4ca1895b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4cae057f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c86c8f50>]}
+
+
+============================== 23:03:18.704570 | 7cf96dae-4185-44fe-9524-23e39e42b065 ==============================
+[0m23:03:18.704570 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:03:18.705288 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'quiet': 'False', 'warn_error': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'introspect': 'True', 'log_path': '/home/vasif/Projects/weather-data-engineering/dbt_transformations/logs', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'profiles_dir': '.', 'invocation_command': 'dbt run --profiles-dir .', 'target_path': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'write_json': 'True', 'no_print': 'None', 'empty': 'False', 'static_parser': 'True'}
+[0m23:03:19.292807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7cf96dae-4185-44fe-9524-23e39e42b065', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4ca08aba0>]}
+[0m23:03:19.394722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7cf96dae-4185-44fe-9524-23e39e42b065', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c7ffaf30>]}
+[0m23:03:19.406136 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m23:03:19.536330 [debug] [MainThread]: checksum: ec233effd4a38090293b5a23cc8b8b614d5e144775ce1edfd3056575abb66b1e, vars: {}, profile: dbt_transformations, target: dev, version: 1.12.6
+[0m23:03:19.537185 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:03:19.537689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7cf96dae-4185-44fe-9524-23e39e42b065', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c2255430>]}
+[0m23:03:20.982602 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/staging/sources.yml @ sources: {'name': 'bronze_layer', 'schema': 'main', 'tables': [{'name': 'weather_raw', 'external': "location 's3://weather-bronze/weather/*.csv'"}, {'name': 'air_quality_raw', 'external': "location 's3://weather-bronze/air_quality/*.csv'"}]} - at path ['tables'][0]['external']: "location 's3://weather-bronze/weather/*.csv'" is not valid under any of the given schemas
+[0m23:03:20.983591 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.3895023, "process_in_blocks": "48208", "process_kernel_time": 0.198619, "process_mem_max_rss": "147924", "process_out_blocks": "360", "process_user_time": 3.473149}
+[0m23:03:20.984152 [debug] [MainThread]: Command `dbt run` failed at 23:03:20.984031 after 2.39 seconds
+[0m23:03:20.984635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4cb3b3f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c2255400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c71800e0>]}
+[0m23:03:20.985092 [debug] [MainThread]: Flushing usage events
+[0m23:03:22.173469 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:02:23.283678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b21c076b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b2379ccb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b21909430>]}
+
+
+============================== 13:02:23.286741 | a4fe0c7c-b8fa-49d8-b2b1-86aadac4eb07 ==============================
+[0m13:02:23.286741 [info ] [MainThread]: Running with dbt=1.12.6
+[0m13:02:23.287601 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'introspect': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'profiles_dir': '.', 'empty': 'False', 'log_path': '/home/vasif/Projects/weather-data-engineering/dbt_transformations/logs', 'fail_fast': 'False', 'partial_parse': 'True', 'hints_enabled': 'True', 'maximum_seed_size_mib': '1', 'warn_error': 'None', 'log_format': 'default', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'static_parser': 'True', 'no_print': 'None'}
+[0m13:02:24.468302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a4fe0c7c-b8fa-49d8-b2b1-86aadac4eb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b2358ee10>]}
+[0m13:02:24.542512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a4fe0c7c-b8fa-49d8-b2b1-86aadac4eb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b23462690>]}
+[0m13:02:24.550222 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m13:02:24.695649 [debug] [MainThread]: checksum: ec233effd4a38090293b5a23cc8b8b614d5e144775ce1edfd3056575abb66b1e, vars: {}, profile: dbt_transformations, target: dev, version: 1.12.6
+[0m13:02:24.696453 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:02:24.696927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a4fe0c7c-b8fa-49d8-b2b1-86aadac4eb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b217066c0>]}
+[0m13:02:25.920097 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/staging/sources.yml @ sources: {'name': 'bronze_layer', 'schema': 'main', 'tables': [{'name': 'weather_raw', 'external': "location 's3://weather-bronze/weather/*.csv'"}, {'name': 'air_quality_raw', 'external': "location 's3://weather-bronze/air_quality/*.csv'"}]} - at path ['tables'][0]['external']: "location 's3://weather-bronze/weather/*.csv'" is not valid under any of the given schemas
+[0m13:02:25.921115 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.7191885, "process_in_blocks": "172264", "process_kernel_time": 0.200947, "process_mem_max_rss": "142628", "process_out_blocks": "16", "process_user_time": 2.995079}
+[0m13:02:25.921662 [debug] [MainThread]: Command `dbt run` failed at 13:02:25.921563 after 2.72 seconds
+[0m13:02:25.922136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b2135ee10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b1b75ac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b22b4dfd0>]}
+[0m13:02:25.922546 [debug] [MainThread]: Flushing usage events
+[0m13:02:26.912098 [debug] [MainThread]: An error was encountered while trying to flush usage events
